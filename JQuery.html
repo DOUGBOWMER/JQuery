@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<title>jQUERY</title>
+</head>
+<script>
+    $(document).ready(function() {
+        $('html').append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'> paragraph 1 </p>\
+                    <p id='2'> paragraph 2 </p>\
+                    <p id='3'> paragraph 3 </p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    
+$("#2").css({'color': 'red'});
+$("#3").click(function() {
+    $('h1').fade.hide()
+
+});
+});
+
+</script>
+
+
+</body>
+</html>
